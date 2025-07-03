@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "App",
+    "slug": "App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.App"
+    },
+    "android": {
+      "package": "com.anonymous.App",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Outfit-Bold.ttf",
+            "./assets/fonts/Outfit-Light.ttf",
+            "./assets/fonts/Outfit-Medium.ttf",
+            "./assets/fonts/Outfit-Regular.ttf",
+            "./assets/fonts/Outfit-ExtraLight.ttf",
+            "./assets/fonts/Outfit-SemiBold.ttf"
+          ]
+        }
+      ],
+      "expo-build-properties",
+      "expo-localization"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a9610218-25b7-4c22-989f-ec6e381b24a8"
+      }
+    },
+    "owner": "houadou",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }
+  }
+}
